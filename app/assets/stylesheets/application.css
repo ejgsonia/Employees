@@ -1,0 +1,779 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+html{
+height:100%;  
+}
+/*Login Page*/
+body
+{
+ background-color:#408c8c;
+ margin:0;
+ height:100%;  
+ }
+a
+{
+ text-decoration:none; 
+ color:#408c8c;
+ 
+}
+.signin
+{
+ background-image:url('signin.png'); 
+ 
+ width:500px; 
+ height:245px;
+ position:absolute;
+ bottom:10px;
+ margin-left:458px;
+}
+
+.container_main
+{
+ background-image:url('CDMSd_Screen.jpg'); 
+ margin:auto; 
+ width:960px; 
+ height:100%;  
+ background-repeat:no-repeat;
+ background-position:bottom center;
+ background-color:#ffffff;
+}
+.login
+{
+ margin-left:300px; 
+ margin-top:30px;  
+ width:200px; 
+}
+
+
+li{
+list-style:none;
+}
+ul{
+margin:0;
+padding:0;
+}
+
+/*Branch Control Panel*/
+.container 
+{
+	background-color:#ffffff; 
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header
+{
+	background-color:#eceff4;
+	width:960px;
+	height:178px;
+}
+.logo
+{
+	float:left;
+	margin-top:16px;
+}
+.menu_holder
+{
+	float:right;
+}
+.logged_user
+{
+	color:#108686;
+	text-align:right;
+	margin-right:40px;
+}
+.logged_user img
+{
+	vertical-align: middle;
+}
+.date
+{
+	text-align:right;
+	margin-right:137px;
+}
+  .menu
+{
+ float:right;
+ margin-top:1px;
+ background:url('menu.png');width:50px;height:11px;
+ width:583px;
+ margin-right:20px;
+ height:74px;
+ padding:0 ;
+ list-style:none;
+}
+.menu li 
+{
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 23px 6px;
+}
+.menu a
+{
+color:#ffffff;
+
+margin-left:20px; 
+}
+.box
+{
+	background-color:#ffffff;
+	width:910px;
+	margin:-5px auto 0;
+	box-shadow:0 4px 17px 5px grey;
+	border-color:#999999; 
+	padding:5px ;
+	border-radius:10px 10px 10px 10px;
+}
+.header_bg
+{
+	background:url('ribbon.png');
+	display:inline-block;
+	padding:0 27px;
+	margin-right:auto;	
+	margin-left:-7px;
+	height:42px;
+}
+.header_bg h2
+{
+	color:#ffffff; 
+	padding-top:7px; 
+	margin:0;
+	text-align:center;
+}
+.boxs
+{
+	background-color:#f0eeef;
+	width:900px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:8px;
+}
+.main div
+{
+	background-color:#ffffff;
+	display:inline-block;
+	width:190px;
+	border-radius:10px 10px 10px 10px;
+	margin:30px 52px;
+	text-align:center;
+	box-shadow:0 1px 6px 0 grey;
+}
+
+.block{
+	padding:10px  25px;
+	margin-top:5px;
+	color:#017f7e;
+	font-size:18px;
+}
+#innerblock_left{
+	display:inline-block;
+}
+#innerblock_right{
+	display:inline-block;
+	margin-left:34px;
+}
+#innerblock_left_sub{
+	margin-top: 38px;
+}
+.block_bt{
+
+	text-align:left;
+	margin-left:158px;
+}
+#footer{
+	font-size:14px;
+	color:#848583;
+	text-align:center;
+
+}
+
+.label_name{
+	display: inline-block;
+	width:200px;
+}
+.style1{
+	width: 200px; 
+	height: 75px;
+}
+.style2{
+	width: 200px; 
+	font-size:14px;
+	color:#565757;
+	display: inline-block;
+
+}
+.style3{
+	width: 125px; 
+
+}
+.style4{
+	width:206px;
+}
+.style5{
+	padding:0
+}
+.footer
+{
+	text-align:center;
+	margin-top:30px;
+}
+.footer b
+{
+	color:#945086;
+}
+
+/*updation ends*/
+
+
+#inner{
+margin-top: 38px;
+}
+.inner_blk_inner{
+position: relative;
+top: -5px;
+}
+
+.tab{
+
+height:47px;
+margin-top: 20px;
+width:400px;
+color:#017f7e;
+font-size:20px;
+border: 1px solid #9c9d9e;
+text-align: center;
+float:left;
+}
+
+.Active_tab{
+background-color:#FAFAFA;
+}
+.in_Active_tab{
+background-color:#E6E6E6;
+}
+.tab_mrgn_left{
+margin-left:50px;
+}
+.tab img{
+vertical-align: middle;
+margin-right:10px;
+margin-top:8px;
+}
+.tab span{
+padding: 0;
+position: relative;
+top: 5px;}
+.bt{
+text-align: right;
+margin-right:112px;
+margin-bottom:20px;
+}
+.span_address{
+padding-left: 2px;
+
+}
+.span_address_1{
+vertical-align: top;
+}
+.width_3_tab{	
+width:264px;
+
+}
+	
+.sub_tab_3{
+float: right;
+background-color:#E6E6E6;
+margin-right:24px;
+
+}	
+.bt1{
+margin-top: 25px;
+}	
+.secretquestion_margin{
+margin-left: 34px;
+}
+.companylogo_margin{
+margin-top: 38px;
+}
+.bt2{
+margin-right: 31px;
+}
+.bt_delete{
+margin-right:55px;
+margin-top: 100px;
+text-align: right;
+}
+.bt3{
+margin-right:31px;
+text-align: right;
+margin-bottom: 25px;
+}
+.browse_bt{
+margin-right: 13px;
+float:right;
+}
+.bt4{
+margin-top: 50px;
+}
+.blk_btn{
+text-align: right;
+margin-right: 5px;
+}
+.txt{
+vertical-align: top;
+}
+.txt_width{
+width:200px;
+vertical-align: middle;
+}
+.hrs_min{
+color: #017F7E;
+font-size: 18px;
+padding:4px;
+
+}
+.date{
+margin-left: 28px;
+vertical-align: top;
+}
+.mgn_tp{
+margin-top:32px;
+}	
+
+
+/*Updations from Remya*/
+
+
+.content
+{
+ background-color: #eee;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.user_radio li
+{
+list-style:none;
+
+}
+.user_id li
+{
+list-style:none;
+width:
+}
+.user_type
+{
+list-style:none;
+}
+.user_email
+{
+list-style:none;
+}
+.user_status 
+{
+list-style:none;
+vertical-align:top;
+
+}
+.user_status li
+{
+text-align:center;
+}
+#bg_listholder ul
+{
+display:inline-block;
+vertical-align:top;
+padding:0px;
+
+}
+#bg_listholder ul li
+{
+height:39px;
+padding-left:10px;
+padding-top:12px;
+
+}
+
+.button 
+{
+text-align:right;
+margin-left:214px;
+display:inline-block;
+}
+.user_name
+{
+list-style:none;
+}
+.user_id
+{
+text-align:center;
+width:86px!important;
+}
+
+.user_radio
+{
+width:35px!important;
+border:none!important;
+
+}
+.user_name
+{
+width:168px!important;
+text-align:center;
+
+}
+.user_type
+{
+width:184px!important;
+text-align:center;
+}
+.user_status 
+{
+width:145px!important;
+border-style:none!important;
+}
+.user_email
+{
+width:258px!important;
+text-align:center;
+}
+.button img
+{
+margin-top:20px;
+}
+.text 
+{
+color:#4bb2ae;
+text-decoration:underline;
+margin-left:442px;
+margin-top:-8px;
+
+
+}
+.content .title
+{
+background-color:#c3c3c3;
+font-weight:bold;
+}
+.bg_grey
+{
+background-color:#e0e0e0;
+}
+
+/*Branch List*/
+.branch_name
+{
+width:175px!important;
+list-style:none;
+text-align:center;
+}
+.branch_address
+{
+width:267px!important;
+list-style:none;
+text-align:center;
+}
+.branch_number
+{
+width:182px!important;
+list-style:none;
+text-align:center;
+}
+.branch_text
+{
+color:#4bb2ae;
+text-decoration:underline;
+margin-left:445px;
+margin-top:-8px;
+}
+.branch_button
+{
+display:inline-block;
+margin-left:282px;
+text-align:right;
+}
+/*Employee List*/
+.emp_title
+{
+width:92px!important;
+list-style:none;
+text-align:center;
+}
+.emp_firstname
+{
+width:175px!important;
+list-style:none;
+text-align:center;
+}
+.emp_lastname
+{
+width:175px!important;
+list-style:none;
+text-align:center;
+}
+.emp_designation
+{
+width:175px!important;
+list-style:none;
+text-align:center;
+}
+.emp_button
+{
+display:inline-block;
+margin-left:457px;
+text-align:right;
+margin-top:-37px;
+}
+.emp_text
+{
+color:#4bb2ae;
+text-decoration:underline;
+margin-top:-8px;
+}
+/*Treatment List*/
+.treatment_name
+{
+width:236px!important;
+list-style:none;
+text-align:center;
+}
+.treatment_price
+{
+width:133px!important;
+list-style:none;
+text-align:center;
+}
+.treatment_description
+{
+width:254px!important;
+list-style:none;
+text-align:center;
+}
+/*employee Records*/
+.emp_tab
+{
+height:47px;
+margin-top: 20px;
+width:301px;
+color:#017f7e;
+font-size:20px;
+border: 1px solid #9c9d9e;
+text-align: center;
+float:left;
+}
+.emp_tab img
+{
+vertical-align: middle;
+margin-right:10px;
+margin-top:8px;
+}
+.emp_tab.Active_tab
+{
+background-color:#FAFAFA;
+margin-left:0px;
+}
+.emp_tab.in_Active_tab
+{
+background-color:#E6E6E6;
+
+}
+.file_type
+{
+width:138px!important;
+list-style:none;
+text-align:center;
+}
+.emp_recordname
+{
+width:575px!important;
+list-style:none;
+text-align:left;
+}
+.button_close
+{
+margin-left:702px;
+}
+.emp_view
+{
+width:188px!important;
+list-style:none;
+text-align:center;
+}
+.font_color
+{
+color:#a39a9c;
+}
+
+/*Product name*/
+.product_name
+{
+width:272px!important;
+list-style:none;
+text-align:center;
+}
+.product_quatity
+{
+width:175px!important;
+list-style:none;
+text-align:center;
+}
+.product_price
+{
+width:175px!important;
+list-style:none;
+text-align:center;
+}
+/*Add Employee*/
+.addgrbutton
+{
+margin-top:78px;
+}
+
+/*
+.layer1
+{
+background-color:#f9f9f9;
+width:918px;
+height:65px;
+margin:-4px;
+}
+.layer1 img
+{
+margin-left:750px;
+}*/
+
+
+.mgn_syl{
+margin-left:48px; 
+vertical-align: top;	
+}
+.v_user_header{
+margin-top: -33px;
+}
+.ok_btn{
+margin-right:325px;
+}
+.actl_cost{
+margin-left: 28px!important;
+}
+.form_top{
+margin-top: 115px;
+}
+.mgn_top{
+ margin-top:40px;
+}
+.ve_align{
+vertical-align: top;
+}
+.txt_width1{
+width: 644px;
+}
+.un_bills{
+border-style: solid;
+border-width: 1px;
+width: 647px;
+}
+.ul_width{
+width:150px;
+text-align: center;
+}
+.li_mar_left{
+ text-align: center;
+width: 237px;
+}
+.ul_ma_le{
+margin-left:1px;
+width:252px;
+text-align: center;
+}
+.title
+{
+list-style:none;
+background-color:#c3c3c3;
+font-weight:bold;
+margin-bottom:0px;
+padding:0px;
+}
+.title li
+{
+display:inline-block;
+padding:10px 0;
+}
+.bg_list ul li {
+height: 28px!important;
+}
+.width_txt{
+width:180px!important;
+}
+.mrn_tp{
+margin-top: 20px;
+}
+.fl_lft{
+float:left;
+}
+.fl_rgt{
+float:right;
+}
+.user_top_button_container
+{
+height:71px;
+margin-top:20px;
+
+}
+.top_button_left
+{
+display:inline-block;
+float:right;
+
+}
+.header_bg_height
+{
+height:100px;
+}
+.dlt_bt{
+ margin-right: 55px;
+}
+.ui-datepicker-trigger{
+margin-bottom: -15px;
+margin-left: 185px;
+position: relative;
+top: -18px;
+}
+
+.treatment_title
+{
+list-style:none;
+background-color:#c3c3c3;
+font-weight:bold;
+margin-bottom:0px;
+padding:0px;
+/*Updation starts*/
+margin-top:10px;
+}
+/*Updation Ends*/
+.treatment_title li
+{
+display:inline-block;
+padding:10px 0;
+}
+.top_button_left {
+display: inline-block;
+float: right;
+}
+

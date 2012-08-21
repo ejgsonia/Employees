@@ -1,0 +1,52 @@
+<div class="box">     
+    <div class="user_top_button_container">   
+      <div class="header_bg">
+        <h2> Employee Data </h2>
+      </div>
+      <div class="top_button_left">
+      <div class="button_container">  
+            <img src="assets/search.png" width="153" height="35" border="none"/>
+            <a href="employee_records/new.html">
+            <img src="assets/addbutton.png" width="128" height="40" border="none"/>
+            </a>
+            <a href="edit.html">
+            <img src="assets/editbutton.png" width="128" height="39" border="none"/>
+            </a>
+                      
+         </div> 
+      <div class="emp_text"> <a href="default.asp">Advanced Search</a></div>         
+       </div>
+    </div>
+
+<table>
+  <tr>
+    <th class="bg_grey">ID</th>
+    <th class="bg_grey">Title</th>
+    <th class="bg_grey">First name</th>
+    <th class="bg_grey">Last name</th>
+    <th class="bg_grey">Designation</th>
+    <th class="bg_grey">Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @employee_records.each do |employee_record| %>
+  <tr>
+    <td><%= employee_record.id %></td>
+    <td><%= employee_record.title %></td>
+    <td><%= employee_record.fore_name %></td>
+    <td><%= employee_record.sur_name %></td>
+    <td><%= employee_record.designation %></td>
+    <td></td>
+    <td><%= link_to 'Show', employee_record %></td>
+    <td><%= link_to 'Edit', edit_employee_record_path(employee_record) %></td>
+    <td><%= link_to 'Destroy', employee_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Employee record', new_employee_record_path %>
+</div>

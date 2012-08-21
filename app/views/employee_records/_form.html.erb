@@ -1,0 +1,155 @@
+<%= form_for(@employee_record) do |f| %>
+  <% if @employee_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@employee_record.errors.count, "error") %> prohibited this employee_record from being saved:</h2>
+
+      <ul>
+      <% @employee_record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="box">
+  <div>
+    <div  class="header_bg_height"> 
+         <a href="new.html">
+      <span class="tab Active_tab tab_mrgn_left">
+
+        <img class="img"  src="../images/employee_1.png"  width="35" height="35"   border="none"/>
+        <span> Employee Details</span>
+        
+      </span></a>  
+      <a href="">
+      <span class="tab in_Active_tab">
+         <img class="img" src="../images/records_1.png"  width="35" height="35"   border="none"/>
+         <span>Employee Records</span>
+      </span>
+      </a>
+    </div>
+  
+</div>
+    <div class="user_top_button_container">   
+      <div class="header_bg">
+        <h2> Add an employee </h2>
+      </div>
+      <div class="top_button_left">
+      <div class="button_container">                   
+         </div>    
+       </div>
+    </div>
+
+<div class="block">
+        <div id="innerblock_left">
+
+            <div class="label_name">
+              <%= f.label :title %><br />
+              <%= f.text_field :title %>
+            </div>
+          </div>
+
+         <div id="innerblock_right">
+          <div class="label_name">
+            <%= f.label :user_name %><br />
+            <%= f.text_field :user_name %>
+          </div>
+        </div>
+</div>
+<div class="block">          
+ <div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :fore_name %><br />
+    <%= f.text_field :fore_name %>
+  </div>
+</div>
+ <div id="innerblock_right">
+  <div class="label_name">
+    <%= f.label :sur_name %><br />
+    <%= f.text_field :sur_name %>
+  </div>
+</div>
+</div>
+<div class="block">
+  <div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :nick_name %><br />
+    <%= f.text_field :nick_name %>
+  </div>
+</div>
+ <div id="innerblock_right">
+  <div class="label_name">
+    <%= f.label :dob %><br />
+    <%= f.text_field :dob %>
+  </div>
+</div>
+</div>
+<div class="block">
+  <div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+</div>
+ <div id="innerblock_right">
+  <div class="label_name">
+    <%= f.label :designation %><br />
+    <%= f.text_field :designation %>
+  </div>
+</div>
+</div>
+<div class="block">
+  <div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+</div>
+ <div id="innerblock_right">
+  <div class="label_name">
+    <%= f.label :mobile %><br />
+    <%= f.text_field :mobile %>
+  </div>
+</div>
+</div>
+<div class="block">
+  <div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </div>
+</div>
+</div>
+<div class="block">
+<div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+</div>
+ <div id="innerblock_right">
+  <div class="label_name">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+</div>
+
+</div>
+<div class="block">
+  <div id="innerblock_left">
+  <div class="label_name">
+    <%= f.label :doj %><br />
+    <%= f.text_field :doj %>
+  </div>
+</div>
+ <div id="innerblock_right">
+  <div class="label_name">
+    <%= f.label :comments %><br />
+    <%= f.text_field :comments %>
+  </div>
+</div>
+</div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>    
+<% end %>
